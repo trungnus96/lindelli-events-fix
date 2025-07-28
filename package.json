@@ -1,0 +1,47 @@
+{
+  "name": "retailer-appointment",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@bugsnag/js": "7.17.0",
+    "@bugsnag/plugin-react": "7.17.0",
+    "axios": "0.27.2",
+    "handlebars": "4.7.7",
+    "js-base64": "^3.7.2",
+    "libphonenumber-js": "1.10.13",
+    "lodash": "^4.17.21",
+    "moment": "2.29.4",
+    "moment-timezone": "0.5.35",
+    "next": "12.2.5",
+    "nprogress": "^0.2.0",
+    "react": "18.2.0",
+    "react-calendar": "^3.7.0",
+    "react-country-flag": "3.0.2",
+    "react-dom": "18.2.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "8.0.2",
+    "react-usestateref": "^1.0.9",
+    "redux": "4.2.0",
+    "redux-thunk": "2.4.1",
+    "styled-components": "5.3.5",
+    "validator": "13.7.0"
+  },
+  "scripts": {
+    "dev": "next -p 3002",
+    "build": "next build",
+    "start": "next start -p 3002"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "eslint": "8.22.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "express": "4.18.1"
+  }
+}

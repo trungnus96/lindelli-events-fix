@@ -17,7 +17,10 @@ export default class MyDocument extends Document {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-ZC1NBXKS65');
+                gtag('config', 'G-ZC1NBXKS65', {
+                  cookie_flags: "SameSite=None; Secure",
+                  cookie_update: false,
+                });
               `,
             }}
           />

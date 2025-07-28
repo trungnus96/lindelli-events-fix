@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
           {/* Google tag (gtag.js) */}
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=AW-436267544"
+            src="https://www.googletagmanager.com/gtag/js?id=G-ZC1NBXKS65"
           ></script>
           <script
             dangerouslySetInnerHTML={{
@@ -17,12 +17,12 @@ export default class MyDocument extends Document {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'AW-436267544');
+                gtag('config', 'G-ZC1NBXKS65');
               `,
             }}
           />
           {/* Google Tag Manager */}
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -32,19 +32,19 @@ export default class MyDocument extends Document {
                 })(window,document,'script','dataLayer','GTM-T8R8PQW');
               `,
             }}
-          />
+          /> */}
           {/* End Google Tag Manager */}
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}
-          <noscript
+          {/* <noscript
             dangerouslySetInnerHTML={{
               __html: `
                 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8R8PQW"
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
               `,
             }}
-          />
+          /> */}
           {/* End Google Tag Manager (noscript) */}
           <Main />
           <NextScript />

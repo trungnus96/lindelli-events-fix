@@ -26,8 +26,8 @@ function Step4(props) {
         appointment_time: "10:00 AM - 11:00 AM",
       };
 
-      window.gtag("event", "book_appointment", {
-        ...book_appointment_event_payload,
+      window.gtag("event", "submit_appointment", {
+        appointment_source: "Brauz Booking",
       });
     } catch (e) {
       console.log("Error submitting appointment", e);

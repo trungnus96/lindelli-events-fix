@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
           <noscript
             dangerouslySetInnerHTML={{
               __html: `
-                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8R8PQW"
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMSJC48"
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
               `,
             }}

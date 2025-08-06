@@ -29,6 +29,9 @@ function Step4(props) {
       window.gtag("event", "submit_appointment", {
         appointment_source: "Brauz Booking",
       });
+
+      console.log("Sending booking_submitted message to parent page");
+      window.parent.postMessage({ event: "booking_submitted" }, "*");
     } catch (e) {
       console.log("Error submitting appointment", e);
     }

@@ -22,21 +22,26 @@ function Step4(props) {
         last_name: "Smith",
         email: "john@smith.com",
         service_name: "engagement_ring",
-        appointment_date: "28-07-2025",
-        appointment_time: "10:00 AM - 11:00 AM",
+        appointment_date: "Thursday, 14th August 2025",
+        appointment_time: "10:00 am - 11:00 am",
       };
 
-      window.gtag("event", "submit_appointment", {
-        appointment_source: "Brauz Booking",
-      });
-
-      console.log("Sending booking_submitted message to parent page");
-      window.parent.postMessage({ event: "booking_submitted" }, "*");
+      window.parent.postMessage(
+        {
+          code: "MESSAGE_TRIGGER_WINDOW",
+          window_field_name: "gtag",
+          parameters: [
+            "event",
+            "booking_brauz_submitted",
+            book_appointment_event_payload,
+          ],
+        },
+        "*"
+      );
     } catch (e) {
       console.log("Error submitting appointment", e);
     }
 
-    alert("Appointment submitted successfully!");
     setIsSubmitted(true);
   };
 
